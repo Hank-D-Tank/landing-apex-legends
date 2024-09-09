@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Apex Legends</title>
+</head>
+
+<body>
+    <main>
+        <div class="red-stripe"></div>
+        <div class="container">
+            <nav>
+                <a href="" class="logo">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <div class="mid-anchor">
+                    <a href="" class="active">
+                        LEGENDS
+                    </a>
+                    <a href="" class="page">BATTLE PASS</a>
+                    <a href="" class="page">NEWS</a>
+                </div>
+                <button>
+                    <div class="icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="text">
+                        FREE DOWNLOAD</div>
+                </button>
+            </nav>
+            <div class="left">
+                <div class="title">
+                    <p>VALKYRIE</p> <span>Winged Avenger</span>
+                </div>
+                <div class="card">
+                    <div class="image" style="background: url(images/bg.jpg);"><img src="images/3.png" alt=""></div>
+                    <div class="class">
+                        <span>CLASS</span>
+                        <p>Skirmisher</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mid">
+                <div class="front">
+                    <img src="images/2.png" alt="">
+                </div>
+                <div class="back">
+                    <img src="images/1.png" alt="">
+                </div>
+            </div>
+            <div class="right">
+                <div class="about">
+                    <p>Bold, brash, fiery and fierce, Kairi Imahara isn’t above greasing palms and bending the law. When
+                        she was a child, she stole a Titan. It belonged to her dad: callsign Viper. She wanted to be
+                        just like him when she grew up. But the next day he left on a mission and never returned. In
+                        some ways, she still followed in his footsteps: it wasn't a Titan, but her ship offered a decent
+                        living. Her personal life, however, was anything but. During the day, she smuggled precious
+                        cargo, and at night, went shot for shot with the outlaws and mercs in the bars. But even though
+                        she had her ladies, her liquor, and her love of the sky, she was still obsessed with finding the
+                        man who’d put her father in harm’s way: his commander, Kuben Blisk.</p>
+                </div>
+                <div class="skills">
+                    <div class="skill">
+                        <span>Tactical Ability</span>
+                        <p>Missile Swarm</p>
+                    </div>
+                    <div class="skill">
+                        <span>Passive Ability</span>
+                        <p>VTOL Jets</p>
+                    </div>
+                    <div class="skill">
+                        <span>Ultimate Ability</span>
+                        <p>Skyward Dive</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        gsap.from(".container", {
+            y: 1000,
+            opacity: 0,
+            duration: 0.8
+        })
+        gsap.from("nav", {
+            y: 100,
+            opacity: 0,
+            delay: 0.8
+        })
+        gsap.from(".left, .right", {
+            y: 100,
+            opacity: 0,
+            delay: 0.8
+        })
+        gsap.from(".back img", {
+            x: 100,
+            opacity: 0,
+            delay: 1
+        })
+        gsap.from(".front img", {
+            y: 1000,
+            delay: 1.5,
+            duration: 0.9
+        })
+    </script>
+</body>
+
+</html>
